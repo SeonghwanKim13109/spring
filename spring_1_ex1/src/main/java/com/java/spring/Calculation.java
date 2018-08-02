@@ -4,6 +4,11 @@ public class Calculation {
 	private int firstNum;
 	private int secondNum;
 	
+	
+	public Calculation() {
+		super();
+	}
+
 	public Calculation(int firstNum, int secondNum) {
 		super();
 		this.firstNum = firstNum;
