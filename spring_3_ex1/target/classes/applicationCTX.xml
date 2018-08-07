@@ -31,6 +31,6 @@
 		</constructor-arg>
 	</bean>
 	
-	<bean id="pencil" class ="com.java.spring.Pencil4B">
+	<bean id="pencil" class ="com.java.spring.Pencil6B">
 	</bean>
 </beans>	

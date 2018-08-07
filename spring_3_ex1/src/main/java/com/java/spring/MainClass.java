@@ -17,6 +17,9 @@ public class MainClass {
 		studentInfo.getStudentInfo();
 		
 		ctx.close();
+		
+		Pencil pencil = ctx.getBean("pencil" , Pencil.class);
+		pencil.use();
 	}
 
 }
