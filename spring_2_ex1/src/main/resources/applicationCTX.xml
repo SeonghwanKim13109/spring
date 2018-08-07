@@ -2,7 +2,42 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+	
+	<bean id ="bmiCalculator" class ="com.java.spring.BMICalculator">
+		<property name="lowweight">
+			<value>15</value>
+		</property>
+		<property name="normal">
+			<value>20</value>
+		</property>
+		<property name="overweight">
+			<value>25</value>
+		</property>
+		<property name="obesity">
+			<value>28</value>
+		</property>
+	</bean>
+	<bean id ="myInfo" class ="com.java.spring.MyInfo">
+		<property name="name">
+			<value>홍길동</value>
+		</property>
+		<property name="height">
+			<value>180</value>
+		</property>
+		<property name="weight">
+			<value>87</value>
+		</property>
+		<property name="hobbys">
+			<list>
+			 	<value>수영</value>
+			 	<value>등산</value>
+			 	<value>독서</value>
+			</list>
+		</property>
+		<property name="calculator">
+			<ref bean ="bmiCalculator"/>
+		</property>
+	</bean>
 </beans>
 	
 	
